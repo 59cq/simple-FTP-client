@@ -5,7 +5,14 @@
 - `Linux`
 
 ## USAGE
-
+- 终端下`make`编译
+- 终端下`fftp yourftpip`连接服务器,然后跟随提示输入密码,密码不可见
+- 登录成功后的命令:
+    - `ls` 列出当前目录下的所有文件信息,无复加参数
+    - `cd path` path可以是绝对路径/多级路径
+    - `put filename` filename为本地路径下的文件的文件名,可以是绝对路径/多级路径
+    - `get filename` filename为服务器当前路径下的文件的文件名,可以是绝对路径/多级路径
+## 例
 ```
 wcq@DESKTOP-PL6DIJT:~$ make
 gcc ftp_client.c network.c ftp.c -lpthread -o fftp
